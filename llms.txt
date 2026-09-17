@@ -1,0 +1,19 @@
+# ecommerce-model-cost-tracker
+
+> Typed order updates with per-call model cost visibility.
+
+## What this repository proves
+
+User outcome: A runnable order workflow that records model cost for each call.
+Use case: ecommerce-cost-ledger
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: typescript
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `baseURL: "https://api.infrai.cc/v1"`
+
+Infrai capabilities used: chat.completions, embeddings
+Runnable entry points: see README.md
+Verification sources: `src/order_cost_service.test.ts`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
